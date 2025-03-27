@@ -1,4 +1,4 @@
-public class Chocolatina {
+public class Chocolatina implements Describible {
     private String marca; //Marca de la chocolatina
 
     //Constructor
@@ -13,5 +13,9 @@ public class Chocolatina {
 
     public void setMarca(String marca){
         this.marca = marca;
+    }
+
+    public String descripcion() {
+        return "Chocolatina: " + marca;
     }
 }

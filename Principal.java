@@ -42,5 +42,18 @@ public class Principal {
         for (Golosina golosina : bolsaGolo) {
             System.out.println(golosina.getNombre() + " - " + golosina.getPeso() + "g");
         }
+
+        System.out.println("***********PROBANDO MÉTODO GENÉRICO MOSTRARCONTENIDO************");
+        System.out.println(">>>>>>>>>>>>>>>>>>>>>>>CONTENIDO DE LA BOLSA DE GOLOSINAS: ");
+        mostrarContenido(bolsaCho);
+        System.out.println(">>>>>>>>>>>>>>>>>>>>>>>CONTENIDO DE LA BOLSA DE GOLOSINAS: ");
+        mostrarContenido(bolsaGolo);
+    }
+
+    //Método genérico para mostrar el contenido de cualquier bolsa
+    public static <T extends Describible> void mostrarContenido(Bolsa<T> bolsa) {
+        for (T item : bolsa) {
+            System.out.println(item.descripcion());
+        }
     }
 }

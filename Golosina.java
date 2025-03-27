@@ -1,4 +1,4 @@
-public class Golosina {
+public class Golosina implements Describible{
     private String nombre; //Nombre de la golosina
     private double peso; //Peso de la golosina
 
@@ -26,5 +26,9 @@ public class Golosina {
     //Setter del peso
     public void setPeso(double peso){
         this.peso = peso;
+    }
+
+    public String descripcion() {
+        return "Golosina: " + nombre + ", Peso: " + peso + "g";
     }
 }
