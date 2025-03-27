@@ -1,3 +1,5 @@
+package Bolsa;
+
 public class TestGen {
 
     //Método genérico para buscar un elemento en un array
@@ -31,9 +33,9 @@ public class TestGen {
 
         Chocolatina[] chocolatinas = {c1, c2};
 
-        System.out.println("\n******************Pruebas con Chocolatina y Golosina******************");
+        System.out.println("\n******************Pruebas con Bolsa.Chocolatina y Bolsa.Golosina******************");
 
-        System.out.println("Prueba con búsqueda en Golosina: " + exist(golosinas, new Golosina("Chicle", 5.0))); //false
+        System.out.println("Prueba con búsqueda en Bolsa.Golosina: " + exist(golosinas, new Golosina("Chicle", 5.0))); //false
         System.out.println("Prueba con búsqueda en Chocolatinas: " + exist(chocolatinas, c1)); //true
     }
 }

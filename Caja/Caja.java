@@ -1,3 +1,5 @@
+package Caja;
+
 public class Caja<T>{
     private T contenido;
     private String color;

@@ -1,3 +1,5 @@
+package Bolsa;
+
 public class Golosina implements Describible{
     private String nombre; //Nombre de la golosina
     private double peso; //Peso de la golosina
@@ -29,6 +31,6 @@ public class Golosina implements Describible{
     }
 
     public String descripcion() {
-        return "Golosina: " + nombre + ", Peso: " + peso + "g";
+        return "Bolsa.Golosina: " + nombre + ", Peso: " + peso + "g";
     }
 }

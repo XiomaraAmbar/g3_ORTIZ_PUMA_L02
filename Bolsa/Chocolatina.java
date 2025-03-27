@@ -1,3 +1,5 @@
+package Bolsa;
+
 public class Chocolatina implements Describible {
     private String marca; //Marca de la chocolatina
 
@@ -16,6 +18,6 @@ public class Chocolatina implements Describible {
     }
 
     public String descripcion() {
-        return "Chocolatina: " + marca;
+        return "Bolsa.Chocolatina: " + marca;
     }
 }

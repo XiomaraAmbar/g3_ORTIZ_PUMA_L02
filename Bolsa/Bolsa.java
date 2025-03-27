@@ -1,3 +1,5 @@
+package Bolsa;
+
 import java.util.ArrayList;
 import java.util.Iterator;
 public class Bolsa <T> implements Iterable <T>{ //Se define la clase genérica

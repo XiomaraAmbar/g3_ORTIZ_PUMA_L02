@@ -1,10 +1,12 @@
+package Bolsa;
+
 public class Principal {
     public static void main(String[] args) {
         //********************BOLSA CHOCOLATINAS**********************
         //Se crea una bolsa que almacena chocolatinas máximo 2
-        Bolsa <Chocolatina> bolsaCho = new Bolsa <Chocolatina>(3);
+        Bolsa<Chocolatina> bolsaCho = new Bolsa <Chocolatina>(3);
 
-        //Se crean tres objetos de tipo Chocolatina
+        //Se crean tres objetos de tipo Bolsa.Chocolatina
         Chocolatina c = new Chocolatina("Milka");
         Chocolatina c1 = new Chocolatina("Milka");
         Chocolatina c2 = new Chocolatina("Ferrero");
@@ -14,7 +16,7 @@ public class Principal {
         bolsaCho.add(c1);
         bolsaCho.add(c2);
 
-        //Bucle for-each que usa el iterator() de Bolsa<T>
+        //Bucle for-each que usa el iterator() de Bolsa.Bolsa<T>
         // Devuelve un iterador sobre la lista interna
         //El bucle imprime las marcas de las chocolatinas dentro de la bolsa
         // Imprimir contenido de la bolsa de chocolatinas
@@ -27,7 +29,7 @@ public class Principal {
         //Se crea una bolsa que almacena golosinas, máximo 3
         Bolsa<Golosina> bolsaGolo = new Bolsa<>(3);
 
-        //Se crean objetos de tipo Golosina
+        //Se crean objetos de tipo Bolsa.Golosina
         Golosina g1 = new Golosina("Caramelo", 10.5);
         Golosina g2 = new Golosina("Gomita", 15.2);
         Golosina g3 = new Golosina("Chicle", 5.8);
