@@ -1,6 +1,6 @@
 package Caja;
 
-public class Caja<T>{
+public class Caja<T> implements Describible{
     private T contenido;
     private String color;
 
@@ -27,4 +27,9 @@ public class Caja<T>{
     public void setColor(String color){
         this.color = color;
     }
+
+    public String descripcion() {
+        return "Color de la Caja: " + color + ", Contenido: " + contenido;
+    }
 }
+

@@ -31,6 +31,6 @@ public class Golosina implements Describible{
     }
 
     public String descripcion() {
-        return "Bolsa.Golosina: " + nombre + ", Peso: " + peso + "g";
+        return "Bolsa Golosina: " + nombre + ", Peso: " + peso + "g";
     }
 }

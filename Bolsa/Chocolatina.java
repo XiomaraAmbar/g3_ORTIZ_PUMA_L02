@@ -18,6 +18,6 @@ public class Chocolatina implements Describible {
     }
 
     public String descripcion() {
-        return "Bolsa.Chocolatina: " + marca;
+        return "Bolsa Chocolatina: " + marca;
     }
 }
