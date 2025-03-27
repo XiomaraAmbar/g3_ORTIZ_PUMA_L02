@@ -20,6 +20,22 @@ public class Cajoneria<T> implements Iterable <Caja<T>>{ //Se define la clase ge
         }
     }
 
+    // Método para buscar una caja que contenga el elemento
+    public Caja<T> search(T elemento) {
+        for (Caja<T> caja : lista) {
+            if (caja.getContenido().contains(elemento)) {
+                return caja; // Retorna la caja donde se encontró el elemento
+            }
+        }
+        return null; // Retorna null si el elemento no se encuentra
+    }
+
+    // Método para eliminar un objeto dentro de una caja sin eliminar la caja
+    public T delete(T elemento) {
+        Caja<T> cajaEncontrada = search(elemento); // Busca la caja que contiene el elemento
+        
+    }
+
     //Interfaz Iterator que permite recorrer colecciones de datos
     //como listas (ArrayList)
     public Iterator<Caja <T>> iterator(){
